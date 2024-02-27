@@ -27,13 +27,13 @@ print("5. Modulus")
 print("6. Floor Division")
 
 # take input from the user
- choice = input("Enter choice(1/2/3/4/5/6): ")
+
 x = float(input("Enter a number: "))
 y = float(input("Enter another number: "))
 
 # get user's choice
 while True:
-    
+    choice = input("Enter choice(1/2/3/4/5/6): ")
     if choice in ('1', '2', '3', '4', '5', '6'):
         # perform the selected operation
         if choice == '1':
@@ -46,6 +46,7 @@ while True:
             print(f"{x} / {y} = {divide(x, y)}")
         elif choice == '5':
             print(f"{x} % {y} = {modulus(x, y)}")
+            
         elif choice == '6':
             print(f"{x} // {y} = {floor_division(x, y)}")
         break

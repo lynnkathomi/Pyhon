@@ -27,9 +27,9 @@ while True:
     choice = input("Enter choice: ")
     if choice == "1":
         food_name = input("Enter food item name: ")
-        quantity = int(input("Enter quantity: "))
+        quantity = int(input("Enter quantity in kgs: "))
         
-        add_food_to_inventory(food_name, quantity, inventory)
+        add_to_inventory(food_name, quantity, inventory)
     elif choice == "2":
         item_name = input("Enter item name: ")
         print(get_item_info(item_name, inventory))
